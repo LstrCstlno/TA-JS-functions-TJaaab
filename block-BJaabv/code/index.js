@@ -120,15 +120,15 @@ function sumOfN(n) {
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 */
 function sumOfN(n) {
-  while (n % 5 == 0 || n % 7 == 0) {
-    total = 0;
-    for (let i = 1; i <= n; i++) {
-      total += i;
+  total = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % 5 === 0 || i % 7 === 0) {
+    total += i;
+    }
   }
-  break;
-  }
-return total;
+  return total;
 }
+
 /*
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
